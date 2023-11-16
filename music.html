@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title"> Celtic Irish Scottish Tin</h2>
+            <h3 id="artist">The Loyalist</h3>
+
+            <div class="img_container">
+                <img src="./images/music1.jpg" alt="">
+            </div>
+
+            <audio src="./audios/celtic-irish-scottish-tin-music1.mp3"></audio>
+
+            <!-- Progress bar -->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">0.00</div>
+                    <div id="duration">0.00</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+
+            <!-- Controls -->
+            <div class="music_controls">
+                <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+                <i class="fa-solid fa-play main_button" id="play" title="Play"></i>
+                <i class="fa-solid fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
